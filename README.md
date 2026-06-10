@@ -23,7 +23,7 @@ Double-click `index.html` in your browser.
 npx serve .
 ```
 
-Then open the URL shown (usually http://localhost:3000).
+Then open the URL shown (https://monnn-portfolio.netlify.app/).
 
 ## Project Structure
 
