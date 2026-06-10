@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Monika M R — MCA student and aspiring software developer."
+    />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Monika M R | MCA Student & Aspiring Software Developer</title>
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme") || "dark";
+        if (t === "dark") document.documentElement.classList.add("dark");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="bg-effects" aria-hidden="true">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-grid"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo gradient-text">MMR</a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="icon-btn theme-btn-desktop"
+            data-theme-toggle
+            aria-label="Toggle theme"
+          >
+            <svg class="icon-sun icon" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="icon-moon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="icon-btn menu-btn"
+            id="menu-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <svg class="icon-open icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+            <svg class="icon-close icon" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <button type="button" class="btn-outline" data-theme-toggle>
+            <svg class="icon-sun icon" style="display: none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+            <svg class="icon-moon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+            <span class="theme-label">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section hero" id="home">
+        <div class="hero-bg-shape hero-bg-shape-1" aria-hidden="true"></div>
+        <div class="hero-bg-shape hero-bg-shape-2" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-content reveal visible">
+            <div class="hero-card glass-card">
+              <div class="hero-badge">
+                <span class="hero-badge-dot" aria-hidden="true"></span>
+                Open to Internships
+              </div>
+              <span class="section-label">Portfolio</span>
+              <h1>Hi, I'm <span class="gradient-text">Monika M R</span></h1>
+              <p class="hero-title" id="typed-role">MCA Student | Frontend Developer | Aspiring Software Engineer</p>
+              <div class="accent-line"></div>
+              <p class="hero-bio">
+                I am a passionate and dedicated Computer Science student with skills in Java,
+                Python, DBMS, HTML, CSS, and web development. I enjoy building innovative
+                projects and solving real-world problems through technology.
+              </p>
+              <p class="hero-location">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                Bengaluru, Karnataka, India
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                  View Projects
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn-outline">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  Contact Me
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal visible" data-delay="0.15">
+            <div class="avatar-wrap">
+              <div class="avatar-ring" aria-hidden="true"></div>
+              <div class="avatar-glow" aria-hidden="true"></div>
+              <div class="avatar-frame">
+                <div class="avatar">
+                  <img
+                    id="profile-img"
+                    src="public/profile.png"
+                    alt="Monika M R - Professional Profile"
+                  />
+                  <div id="profile-fallback" class="avatar-fallback gradient-text">MMR</div>
+                </div>
+              </div>
+              <div class="avatar-orbit avatar-orbit-1" aria-hidden="true"></div>
+              <div class="avatar-orbit avatar-orbit-2" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="reveal">
+            <span class="section-label">About</span>
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <p class="section-subtitle">
+              Monika M R is an MCA student at CMR Institute of Technology with a strong interest
+              in software development, frontend technologies, databases, and machine learning. She
+              enjoys developing practical technology solutions and continuously improving her
+              technical expertise through hands-on projects and learning.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="reveal card-hover highlights-card" data-delay="0.1">
+              <h3>Highlights</h3>
+              <ul class="highlights-list">
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  MCA Student
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  BCA Graduate (CGPA 8.80)
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Strong Programming Foundation
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Frontend Development Enthusiast
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Machine Learning Learner
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Problem Solver
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Team Player
+                </li>
+                <li>
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Continuous Learner
+                </li>
+              </ul>
+            </div>
+
+            <div class="stats-grid">
+              <div class="reveal card-hover stat-card" data-delay="0.1">
+                <p class="stat-value gradient-text">8.78</p>
+                <p class="stat-label">CGPA</p>
+              </div>
+              <div class="reveal card-hover stat-card" data-delay="0.18">
+                <p class="stat-value gradient-text">2+</p>
+                <p class="stat-label">Academic Projects</p>
+              </div>
+              <div class="reveal card-hover stat-card" data-delay="0.26">
+                <p class="stat-value gradient-text">10+</p>
+                <p class="stat-label">Technologies Learned</p>
+              </div>
+              <div class="reveal card-hover stat-card" data-delay="0.34">
+                <p class="stat-value gradient-text">Open</p>
+                <p class="stat-label">Internship Opportunities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section section-muted" id="education">
+        <div class="container">
+          <div class="reveal">
+            <span class="section-label">Education</span>
+            <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+            <p class="section-subtitle">
+              Academic journey from school to postgraduate studies in computer applications.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal" data-delay="0">
+              <div class="timeline-dot active" aria-hidden="true"></div>
+              <div class="card-hover edu-card active">
+                <div class="edu-card-bar"></div>
+                <div class="edu-card-body">
+                  <div class="edu-info">
+                    <div class="edu-icon">
+                      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3>Master of Computer Applications (MCA)</h3>
+                      <p class="edu-institution">CMR Institute of Technology</p>
+                      <p class="edu-meta">Bengaluru, Karnataka · Expected: July 2027</p>
+                    </div>
+                  </div>
+                  <div class="edu-badges">
+                    <span class="badge badge-active">In Progress</span>
+                    <span class="badge badge-score">CGPA: 8.78</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal" data-delay="0.08">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="card-hover edu-card">
+                <div class="edu-card-bar"></div>
+                <div class="edu-card-body">
+                  <div class="edu-info">
+                    <div class="edu-icon">
+                      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3>Bachelor of Computer Application (BCA)</h3>
+                      <p class="edu-institution">Vidyavahini First Grade College</p>
+                      <p class="edu-meta">Tumkur · Year: 2025</p>
+                    </div>
+                  </div>
+                  <div class="edu-badges">
+                    <span class="badge">Completed</span>
+                    <span class="badge badge-score">CGPA: 8.80</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal" data-delay="0.16">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="card-hover edu-card">
+                <div class="edu-card-bar"></div>
+                <div class="edu-card-body">
+                  <div class="edu-info">
+                    <div class="edu-icon">
+                      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3>Pre-University Course – Science</h3>
+                      <p class="edu-institution">Sri KMM Ranganatha PU College</p>
+                      <p class="edu-meta">Sira · Year: 2022</p>
+                    </div>
+                  </div>
+                  <div class="edu-badges">
+                    <span class="badge">Completed</span>
+                    <span class="badge badge-score">Score: 75%</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal" data-delay="0.24">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="card-hover edu-card">
+                <div class="edu-card-bar"></div>
+                <div class="edu-card-body">
+                  <div class="edu-info">
+                    <div class="edu-icon">
+                      <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3>SSLC</h3>
+                      <p class="edu-institution">SMR High School</p>
+                      <p class="edu-meta">Year: 2020</p>
+                    </div>
+                  </div>
+                  <div class="edu-badges">
+                    <span class="badge">Completed</span>
+                    <span class="badge badge-score">Score: 87%</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section section-muted" id="skills">
+        <div class="container">
+          <div class="reveal">
+            <span class="section-label">Skills</span>
+            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            <p class="section-subtitle">
+              Technologies and competencies developed through coursework and projects.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="reveal card-hover skill-card" data-delay="0">
+              <h3>Programming Languages</h3>
+              <div class="skill-item">
+                <div class="skill-header"><span>Java</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span>Python</span><span>88%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span>JavaScript</span><span>80%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 80%"></div></div>
+              </div>
+            </div>
+
+            <div class="reveal card-hover skill-card" data-delay="0.08">
+              <h3>Web Technologies</h3>
+              <div class="skill-item">
+                <div class="skill-header"><span>HTML5</span><span>92%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span>CSS3</span><span>88%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+            </div>
+
+            <div class="reveal card-hover skill-card" data-delay="0.16">
+              <h3>Databases</h3>
+              <div class="skill-item">
+                <div class="skill-header"><span>MySQL</span><span>82%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 82%"></div></div>
+              </div>
+            </div>
+
+            <div class="reveal card-hover skill-card" data-delay="0.24">
+              <h3>Tools &amp; Platforms</h3>
+              <div class="skill-item">
+                <div class="skill-header"><span>Git</span><span>85%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span>GitHub</span><span>88%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span>Visual Studio Code</span><span>90%</span></div>
+                <div class="skill-track"><div class="skill-fill" style="--level: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section section-muted" id="projects">
+        <div class="container">
+          <div class="reveal">
+            <span class="section-label">Projects</span>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">
+              Academic and personal work demonstrating practical problem-solving.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="reveal project-card" data-delay="0">
+              <div class="project-card-inner card-hover">
+              <div class="project-banner gradient-violet">
+                <div class="project-shine" aria-hidden="true"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+              </div>
+              <div class="project-body">
+                <h3>Voice Sentiment Analysis</h3>
+                <p class="project-desc">
+                  An AI-powered application that analyzes voice recordings and identifies emotional
+                  sentiment from speech using machine learning and audio processing.
+                </p>
+                <ul class="project-features">
+                  <li>Audio Processing</li>
+                  <li>Sentiment Detection</li>
+                  <li>Machine Learning Integration</li>
+                  <li>User-Friendly Interface</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Machine Learning</span>
+                  <span class="project-tag">Audio Analysis</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/monikamr05" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+                    View on GitHub
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              </div>
+            </article>
+
+            <article class="reveal project-card" data-delay="0.1">
+              <div class="project-card-inner card-hover">
+              <div class="project-banner gradient-emerald">
+                <div class="project-shine" aria-hidden="true"></div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C6.5 17 6 16 6 15c-3 1.1-4 3.34-4 6z"/>
+                </svg>
+              </div>
+              <div class="project-body">
+                <h3>Smart Agriculture System</h3>
+                <p class="project-desc">
+                  A smart agriculture solution designed to support modern farming practices through
+                  intelligent data handling and monitoring.
+                </p>
+                <ul class="project-features">
+                  <li>Smart Monitoring</li>
+                  <li>Data Analysis</li>
+                  <li>Agricultural Automation</li>
+                  <li>Resource Management</li>
+                </ul>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">Database Systems</span>
+                  <span class="project-tag">Web Technologies</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/monikamr05" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+                    View on GitHub
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="reveal">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="section-subtitle">
+              Open to internship opportunities. Feel free to reach out.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="reveal contact-list" data-delay="0.1">
+              <div class="card-hover contact-item">
+                <div class="contact-icon">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-value"><a href="mailto:monikamr2004@email.com">monikamr2004@email.com</a></p>
+                </div>
+              </div>
+              <div class="card-hover contact-item">
+                <div class="contact-icon">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">Location</p>
+                  <p class="contact-value">Bengaluru, Karnataka, India</p>
+                </div>
+              </div>
+              <div class="card-hover contact-item">
+                <div class="contact-icon">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">GitHub</p>
+                  <p class="contact-value">
+                    <a href="https://github.com/monikamr05" target="_blank" rel="noopener noreferrer">monikamr05</a>
+                  </p>
+                </div>
+              </div>
+              <div class="card-hover contact-item">
+                <div class="contact-icon">
+                  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact-label">LinkedIn</p>
+                  <p class="contact-value">
+                    <a href="https://www.linkedin.com/in/monika-m-r-266811331" target="_blank" rel="noopener noreferrer">Monika M R</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <form class="reveal card contact-form" id="contact-form" data-delay="0.15">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary" id="submit-btn">
+                Send Message
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="font-display gradient-text" style="font-size: 1.125rem; font-weight: 700">Monika M R</p>
+          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: var(--muted-foreground)">
+            Building innovative solutions through technology.
+          </p>
+          <p class="footer-copy">© 2026 Monika M R</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/monikamr05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/monika-m-r-266811331" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="mailto:monikamr2004@email.com" aria-label="Email">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/>
+      </svg>
+    </button>
+
+    <noscript>
+      <style>
+        .reveal,
+        .js-ready .reveal:not(.visible) { opacity: 1 !important; transform: none !important; }
+        .skill-fill,
+        .js-ready .skill-fill { width: var(--level) !important; }
+      </style>
+    </noscript>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
