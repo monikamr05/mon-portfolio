@@ -23,7 +23,7 @@ Double-click `index.html` in your browser.
 npx serve .
 ```
 
-Then open the URL shown https://radiant-raindrop-098444.netlify.app/
+Then open the URL shown https://monika-portfolio-098444.netlify.app/
 
 ## Project Structure
 
